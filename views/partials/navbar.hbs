@@ -1,0 +1,61 @@
+<nav class="navbar is-light" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <div class="title">Vista Place</div>
+    </a>
+  
+    <div class="navbar-burger burger is-light" id="burger" onclick="toggleBurger()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="navbar-menu" id="navMenu">
+      <div class="navbar-end">
+          <a href="/siteplan" class="navbar-item">
+              Site Plan
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+              <div class="navbar-link">
+                  Floor Plans
+              </div>
+              <div class="navbar-dropdown">
+                  <a class="navbar-item" href="/vista31">
+                      Vista 3.1
+                  </a>
+                  <a class="navbar-item" href="/vista32">
+                      Vista 3.2
+                  </a>
+                  <a class="navbar-item" href="/vista21">
+                      Vista 2.1
+                  </a>
+                  <a class="navbar-item" href="/vista11">
+                      Vista 1.1
+                  </a>
+                  <a class="navbar-item" href="/">
+                      Finished Basement Option
+                  </a>
+              </div>
+          </div>
+          <a href="/" class="navbar-item">
+             Features
+          </a>
+          <a href="/neighborhood" class="navbar-item">
+              Neighborhood
+          </a>
+          <a href="/" class="navbar-item">
+              Design Concepts
+          </a>
+      </div>
+  </div>
+</nav>
+
+
+<script>
+const toggleBurger = () => {
+    let burgerIcon = document.getElementById('burger');
+    let dropMenu = document.getElementById('navMenu');
+    burgerIcon.classList.toggle('is-active');
+    dropMenu.classList.toggle('is-active');
+};
+</script>
